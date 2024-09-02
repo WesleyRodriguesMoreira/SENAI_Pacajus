@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Eco Light</title>
+    <link rel="stylesheet" href="../css/teste.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sun Eco Light</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#estimate">Estimativa</a></li>
+                    <li><a href="#contact">Atendimento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Sobre a Empresa</h2>
+            <p><strong>Missão:</strong> Produzir energia limpa e sustentável com o menor impacto ambiental e economia para o cliente.</p>
+            <p><strong>Visão:</strong> Ser reconhecida e referência no nordeste do Brasil.</p>
+            <p><strong>Valores:</strong> Ética, Compromisso, Excelência, Foco no cliente, Sustentabilidade, Inovação, Responsabilidade.</p>
+        </div>
+    </section>
+    <section id="products" class="section">
+        <div class="container">
+            <h2>Produtos</h2>
+            <div class="product">
+                <h3>Kit de Energia Renovável</h3>
+                <p>Inclui painéis solares, conectores, baterias, inversores solares, estrutura de fixação, controlador de carga e stringbox.</p>
+            </div>
+        </div>
+    </section>
+    <section id="estimate" class="section">
+        <div class="container">
+            <h2>Estimativa de Valor</h2>
+            <form id="estimateForm">
+                <label for="area">Área (m²):</label>
+                <input type="number" id="area" name="area" min="1" required>
+                <button type="button" onclick="calculateEstimate()">Calcular</button>
+                <p id="result"></p>
+            </form>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Canal de Atendimento</h2>
+            <p>Telefone: [Número de telefone]</p>
+            <p>E-mail: [Endereço de e-mail]</p>
+            <form id="contactForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sun Eco Light. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../src/teste.js"></script>
+</body>
+</html>
